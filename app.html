@@ -2,7 +2,7 @@
 <html lang="en" class="h-100">
 
 <head>
-   <title>App Name: Coding project by Joel Ogunniran</title>
+   <title>TACO CAT: Coding project by Joel Ogunniran</title>
    <!-- Required meta tags -->
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -13,8 +13,10 @@
    
    <script src="https://kit.fontawesome.com/5db21ba9c6.js" crossorigin="anonymous"></script>
 
-   <link rel="stylesheet" href="css/minisite.css">
-   <link rel="icon" type="image/png" href="img/favicon_io/favicon-32x32.png">
+   <link rel="stylesheet" href="css/styles.css">
+   
+   <!-- Favicon -->
+   <link rel="icon" type="image/png" href="img/favicon-0/favicon-32x32.png">
    
 </head>
 
@@ -22,7 +24,7 @@
    <!-- Navigation Section -->
    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
       <div class="container-fluid">
-         <a class="navbar-brand" href="#"> <img src="img/M-APP-2.png" class="d-inline-block align-text-top" width="30" height="24" > APP NAME</a>
+         <a class="navbar-brand" href="#"> <img src="img/CT-logo-1.png" class="d-inline-block align-text-top" width="30" height="24" > TACO CAT</a>
          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
          <span class="navbar-toggler-icon"></span>
@@ -30,7 +32,7 @@
       <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav me-auto mb-2 mb-md-0">
                <li class="nav-item">
-                  <a class="nav-link  href="js/minisite.js">Home</a>
+                  <a class="nav-link" href="index.html">Home</a>
                </li>
                <li class="nav-item">
                   <a class="nav-link active" aria-current="page" href="app.html">The App</a>
@@ -51,12 +53,42 @@
 
    <!-- Main Section -->
    <main class="flex-shrink-0">
-      <div class="container">
-
+      <div class="container mt-5">
+         <div class="row row-cols-1 row-cols-lg-2">
+            <div class="col">
+               <h1 class="diaplay-5 fw-bold lh-1 mb-3">
+                  TACO CAT: A coding Project 
+               </h1>
+               <h4 class="lead pb-3">
+                  Taco Cat is a palindrome coding project.A Palindrome is a wor, phrase or sentence that read the same backward and forward. Write a program that check if the phrase or words entered is a palindrome. 
+                  <strong>BOLD.</strong>
+               </h4>
+            </div>
+            <div class="col">
+               <h5 class="border-1 border-bottom border-danger">Enter A String To Reverse</h5>
+               <form action="" class="row gx-3 gy-2">
+                  <div class="col">
+                     <input id="userString" type="text" class="form-control" placeholder="Enter A String" aria-label="Enter A String">
+                  </div>
+                  <div class="col-12">
+                     <button type="button" id="btnSubmit" class="btn btn-danger">Reverse Me</button>
+                  </div>
+                  <div class="alert alert-danger mt-5 invisible fade show " id="alert" role="alert">
+                     <h4 class="alert-heading">
+                        Well Done!!
+                     </h4>
+                     <hr>
+                     <p class="mb-0" id="msg">
+                        <!--Insert a Message Here  -->
+                     </p>
+                  </div>
+               </form>
+            </div>
+         </div>
       </div>
    </main>
 
-      <!-- Footer Section -->
+   <!-- Footer Section -->
    <footer class="footer mt-auto py-3  sticky-footer">
       <div class="container-fluid ">
          <div class="row row-cols-1 row-cols-lg-3 gy-2">
@@ -98,7 +130,7 @@
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
       integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
    </script>
-   <script src="js/minisite.js"></script>
-</body>
+   <script src="js/tacocat.js"></script>
 
+</body>
 </html>
