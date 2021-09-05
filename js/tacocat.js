@@ -41,7 +41,6 @@ function checkForPalindrome(userString){
   returnObj.reverse = userString;
 
   return returnObj;
-
 }
 
 //3. Display a message to the screen
@@ -50,5 +49,4 @@ function displayMessage(returnObj) {
    document.getElementById("alertHeader").innerHTML = returnObj.msg;
    document.getElementById("msg").innerHTML = `Your phrase reverse is: ${returnObj.reverse}`;
    document.getElementById("alert").classList.remove("invisible");
-
 }
