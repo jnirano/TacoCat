@@ -1,9 +1,9 @@
-// Get our user input from the page/html
+//1. Get our user input from the page/html
 function getValue(){
 
    //Make sure the alert is visible
    document.getElementById("alert").classList.add("invisible");
-   
+
    //get user string for the page
    let userString = document.getElementById("userString").value;
 
@@ -14,7 +14,7 @@ function getValue(){
    displayMessage(returnObj);
 }
 
-//Check if string is a palindrome
+//2. Check if string is a palindrome
 function checkForPalindrome(userString){
    //Convert string to lowercase
    userString = userString.toLowerCase();
@@ -44,11 +44,11 @@ function checkForPalindrome(userString){
 
 }
 
-//Display a message to the screen
-function displayMessage() {
+//3. Display a message to the screen
+function displayMessage(returnObj) {
    
    document.getElementById("alertHeader").innerHTML = returnObj.msg;
-   document.getElementById("msg").innerHTML = "Your phrase reverse is: ${returnObj.reverse}";
+   document.getElementById("msg").innerHTML = `Your phrase reverse is: ${returnObj.reverse}`;
    document.getElementById("alert").classList.remove("invisible");
 
 }
